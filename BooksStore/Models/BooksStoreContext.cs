@@ -8,13 +8,14 @@ namespace BooksStore.Models
 {
     public class BooksStoreContext : DbContext
     {
+        public DbSet<Book> Books { get; set; }
+        public DbSet<Writer> Writers { get; set; }
+        public DbSet<Publisher> Publishers { get; set; }
+
         public BooksStoreContext(DbContextOptions<BooksStoreContext> options)
             : base(options)
         {
         }
 
-        public DbSet<Book> Books { get; set; }
-        public DbSet<Writer> Writers { get; set; }
-        public DbSet<Publisher> Publishers { get; set; }
     }
 }

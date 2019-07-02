@@ -5,9 +5,8 @@ using System.Threading.Tasks;
 
 namespace BooksStore.Models
 {
-    public class Writer
+    public class Writer : BaseModel
     {
-        public long Id { get; set; }
         public string Name { get; set; }
     }
 }
